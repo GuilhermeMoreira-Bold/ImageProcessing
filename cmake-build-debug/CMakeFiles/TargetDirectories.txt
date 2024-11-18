@@ -1,0 +1,6 @@
+/home/guilherme/CLionProjects/IMAGE_PROCESSING/cmake-build-debug/CMakeFiles/IMAGE_PROCESSING.dir
+/home/guilherme/CLionProjects/IMAGE_PROCESSING/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/guilherme/CLionProjects/IMAGE_PROCESSING/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/guilherme/CLionProjects/IMAGE_PROCESSING/cmake-build-debug/vendor/imgui/CMakeFiles/imgui.dir
+/home/guilherme/CLionProjects/IMAGE_PROCESSING/cmake-build-debug/vendor/imgui/CMakeFiles/edit_cache.dir
+/home/guilherme/CLionProjects/IMAGE_PROCESSING/cmake-build-debug/vendor/imgui/CMakeFiles/rebuild_cache.dir
