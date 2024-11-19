@@ -9,10 +9,23 @@
 
 class GuigoImage {
     unsigned int Textute;
+    int width, height;
+
 public:
-    GuigoImage(unsigned int Texture) {
-        this-> Textute = Texture;
+    int get_width() {
+        return width;
     }
+
+    int get_height() {
+        return height;
+    }
+
+    GuigoImage(unsigned int textute, int width, int height)
+        : Textute(textute),
+          width(width),
+          height(height) {
+    }
+
     unsigned int getTextute() {
         return this->Textute;
     }

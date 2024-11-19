@@ -119,6 +119,13 @@ build CMakeFiles/IMAGE_PROCESSING.dir/src/service/ImageLoader.cpp.o: CXX_COMPILE
   OBJECT_DIR = CMakeFiles/IMAGE_PROCESSING.dir
   OBJECT_FILE_DIR = CMakeFiles/IMAGE_PROCESSING.dir/src/service
 
+build CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/ImageModifier.cpp.o: CXX_COMPILER__IMAGE_PROCESSING_unscanned_Debug /home/guilherme/CLionProjects/IMAGE_PROCESSING/src/widgets/ImageModifier.cpp || cmake_object_order_depends_target_IMAGE_PROCESSING
+  DEP_FILE = CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/ImageModifier.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/imgui -isystem /usr/include/SDL2
+  OBJECT_DIR = CMakeFiles/IMAGE_PROCESSING.dir
+  OBJECT_FILE_DIR = CMakeFiles/IMAGE_PROCESSING.dir/src/widgets
+
 
 # =============================================================================
 # Device Link build statements for EXECUTABLE target IMAGE_PROCESSING
@@ -127,7 +134,7 @@ build CMakeFiles/IMAGE_PROCESSING.dir/src/service/ImageLoader.cpp.o: CXX_COMPILE
 #############################################
 # Link the executable CMakeFiles/IMAGE_PROCESSING.dir/cmake_device_link.o
 
-build CMakeFiles/IMAGE_PROCESSING.dir/cmake_device_link.o: CXX_EXECUTABLE_DEVICE_LINKER__IMAGE_PROCESSING_Debug CMakeFiles/IMAGE_PROCESSING.dir/main.cu.o CMakeFiles/IMAGE_PROCESSING.dir/src/renderer/Renderer.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/processingFaced/ImageProcessing.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/editor/Editor.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/Widget.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/HelloWidget.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/TestWidget.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/ImageViwer.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/components/GuigoImage.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/service/ImageLoader.cpp.o | /usr/lib/x86_64-linux-gnu/libSDL2.so vendor/imgui/libimgui.a /usr/lib/x86_64-linux-gnu/libGLEW.so || vendor/imgui/libimgui.a
+build CMakeFiles/IMAGE_PROCESSING.dir/cmake_device_link.o: CXX_EXECUTABLE_DEVICE_LINKER__IMAGE_PROCESSING_Debug CMakeFiles/IMAGE_PROCESSING.dir/main.cu.o CMakeFiles/IMAGE_PROCESSING.dir/src/renderer/Renderer.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/processingFaced/ImageProcessing.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/editor/Editor.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/Widget.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/HelloWidget.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/TestWidget.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/ImageViwer.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/components/GuigoImage.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/service/ImageLoader.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/ImageModifier.cpp.o | /usr/lib/x86_64-linux-gnu/libSDL2.so vendor/imgui/libimgui.a /usr/lib/x86_64-linux-gnu/libGLEW.so || vendor/imgui/libimgui.a
   LANGUAGE_COMPILE_FLAGS = -g "--generate-code=arch=compute_52,code=[compute_52,sm_52]"
   LINK_LIBRARIES = -lSDL2_image vendor/imgui/libimgui.a -lOpenGL  -lcudadevrt -lcudart_static -lrt -lpthread -ldl
   LINK_PATH = -L/usr/lib/x86_64-linux-gnu/stubs  -L/usr/lib/gcc/x86_64-linux-gnu/11
@@ -141,7 +148,7 @@ build CMakeFiles/IMAGE_PROCESSING.dir/cmake_device_link.o: CXX_EXECUTABLE_DEVICE
 #############################################
 # Link the executable IMAGE_PROCESSING
 
-build IMAGE_PROCESSING: CXX_EXECUTABLE_LINKER__IMAGE_PROCESSING_Debug CMakeFiles/IMAGE_PROCESSING.dir/main.cu.o CMakeFiles/IMAGE_PROCESSING.dir/src/renderer/Renderer.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/processingFaced/ImageProcessing.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/editor/Editor.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/Widget.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/HelloWidget.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/TestWidget.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/ImageViwer.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/components/GuigoImage.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/service/ImageLoader.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/cmake_device_link.o | /usr/lib/x86_64-linux-gnu/libSDL2.so vendor/imgui/libimgui.a /usr/lib/x86_64-linux-gnu/libGLEW.so || vendor/imgui/libimgui.a
+build IMAGE_PROCESSING: CXX_EXECUTABLE_LINKER__IMAGE_PROCESSING_Debug CMakeFiles/IMAGE_PROCESSING.dir/main.cu.o CMakeFiles/IMAGE_PROCESSING.dir/src/renderer/Renderer.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/processingFaced/ImageProcessing.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/editor/Editor.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/Widget.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/HelloWidget.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/TestWidget.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/ImageViwer.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/components/GuigoImage.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/service/ImageLoader.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/ImageModifier.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/cmake_device_link.o | /usr/lib/x86_64-linux-gnu/libSDL2.so vendor/imgui/libimgui.a /usr/lib/x86_64-linux-gnu/libGLEW.so || vendor/imgui/libimgui.a
   FLAGS = -g
   LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libSDL2.so  -lSDL2_image  vendor/imgui/libimgui.a  -lOpenGL  /usr/lib/x86_64-linux-gnu/libGLEW.so  -lcudadevrt  -lcudart_static  -lrt  -lpthread  -ldl
   LINK_PATH = -L/usr/lib/x86_64-linux-gnu/stubs   -L/usr/lib/gcc/x86_64-linux-gnu/11

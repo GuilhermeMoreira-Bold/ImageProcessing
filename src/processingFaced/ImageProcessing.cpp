@@ -6,6 +6,7 @@
 
 #include <SDL.h>
 #include "../service/ImageLoader.h"
+#include "../widgets/ImageModifier.h"
 #include "../widgets/ImageViwer.h"
 #include "backends/imgui_impl_opengl3.h"
 #include "backends/imgui_impl_sdl2.h"
@@ -45,9 +46,10 @@ ImageProcessing::ImageProcessing(char* title, int width, int height) {
 
 
     ImageLoader loader;
+    GuigoImage* image = loader.loadImage("/home/guilherme/CLionProjects/IMAGE_PROCESSING/res/img.jpg");
 
-
-    editor = new Editor(window, gl_context,new HelloWidget(), new TestWidget(), new ImageViwer(1200.0f,843.0f,loader.loadImage("/home/guilherme/CLionProjects/IMAGE_PROCESSING/res/img.jpg")));
+    editor = new Editor(window, gl_context,
+        new ImageViwer(1200.0f,843.0f,image), new ImageModifier(image));
 
     myRenderer = new Renderer(window, renderer, editor);
 }

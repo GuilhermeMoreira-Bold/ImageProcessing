@@ -31,7 +31,9 @@ add_executable(IMAGE_PROCESSING main.cu
         src/components/GuigoImage.cpp
         src/components/GuigoImage.h
         src/service/ImageLoader.cpp
-        src/service/ImageLoader.h)
+        src/service/ImageLoader.h
+        src/widgets/ImageModifier.cpp
+        src/widgets/ImageModifier.h)
 
 target_link_libraries(IMAGE_PROCESSING PRIVATE
         ${SDL2_LIBRARIES}

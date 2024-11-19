@@ -5,7 +5,6 @@
 #include "ImageLoader.h"
 
 #include <iostream>
-#include <ostream>
 #include <SDL_surface.h>
 #include <GL/glew.h>
 #include <SDL_image.h>
@@ -36,6 +35,7 @@ GuigoImage* ImageLoader::loadImage(char* path) {
     );
 
     glBindTexture(GL_TEXTURE_2D, 0);
+    GuigoImage* img = new GuigoImage(texture, surface->w, surface->h);
     SDL_FreeSurface(surface);
-    return new GuigoImage(texture);
+    return img;
 }
