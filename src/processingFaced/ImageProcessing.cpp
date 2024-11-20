@@ -6,14 +6,17 @@
 
 #include <SDL.h>
 #include "../service/ImageLoader.h"
+#include "../widgets/Console.h"
 #include "../widgets/ImageModifier.h"
 #include "../widgets/ImageViwer.h"
-#include "backends/imgui_impl_opengl3.h"
 #include "backends/imgui_impl_sdl2.h"
 
 ImageProcessing::ImageProcessing(char* title, int width, int height) {
+    Console* console = new Console();
+    Log::getInstance()->addObserver(console);
+    Log::getInstance()->log(INFO, "[ProcessingFaced] ImageProcessing");
     if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_TIMER | SDL_INIT_GAMECONTROLLER) != 0) {
-        SDL_Log("Erro ao inicializar SDL: %s", SDL_GetError());
+        Log::getInstance()->log(ERROR,"SDL couldn't initialize: " + static_cast<std::string> (SDL_GetError()));
     }
 
     SDL_Window *window = SDL_CreateWindow(
@@ -24,13 +27,14 @@ ImageProcessing::ImageProcessing(char* title, int width, int height) {
     );
 
     if (window == NULL) {
-        printf("Erro ao criar a janela: %s\n", SDL_GetError());
+        Log::getInstance()->log(ERROR,"Error to create window: " + static_cast<std::string> (SDL_GetError()));
         SDL_Quit();
     }
 
     SDL_Renderer *renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
     if (renderer == NULL) {
-        printf("Erro ao criar o renderizador: %s\n", SDL_GetError());
+       Log::getInstance()->log(ERROR,"Error to create the renderer: " + static_cast<std::string> (SDL_GetError()));
+
         SDL_DestroyWindow(window);
         SDL_Quit();
     }
@@ -41,7 +45,7 @@ ImageProcessing::ImageProcessing(char* title, int width, int height) {
     SDL_GL_SetSwapInterval(1);
 
     if (glewInit() != 0) {
-        fprintf(stderr, "Falha ao inicializar OpenGL loader!\n");
+       Log::getInstance()->log(ERROR,"Error initialize OpenGL loader: " + static_cast<std::string> (SDL_GetError()));
     }
 
 
@@ -49,7 +53,7 @@ ImageProcessing::ImageProcessing(char* title, int width, int height) {
     GuigoImage* image = loader.loadImage("/home/guilherme/CLionProjects/IMAGE_PROCESSING/res/img.jpg");
 
     editor = new Editor(window, gl_context,
-        new ImageViwer(1200.0f,843.0f,image), new ImageModifier(image));
+        new ImageViwer(1200.0f,843.0f,image), new ImageModifier(image), console);
 
     myRenderer = new Renderer(window, renderer, editor);
 }

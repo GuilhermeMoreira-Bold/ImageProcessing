@@ -6,7 +6,7 @@
 #define IMAGELOADER_H
 #include <string>
 #include "../components/GuigoImage.h"
-
+#include "../log/Log.h"
 
 class ImageLoader {
     public:

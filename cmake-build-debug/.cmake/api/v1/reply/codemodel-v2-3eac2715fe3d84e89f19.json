@@ -1,0 +1,102 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "vendor/imgui",
+					"jsonFile" : "directory-vendor.imgui-Debug-fc52280bdf22a6fe8f00.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "vendor/imgui",
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "IMAGE_PROCESSING",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "imgui",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "IMAGE_PROCESSING::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-IMAGE_PROCESSING-Debug-479a953ec6bd71c34ed8.json",
+					"name" : "IMAGE_PROCESSING",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "imgui::@3edc7d76825c910d4a8d",
+					"jsonFile" : "target-imgui-Debug-ffb3f6fad33724041407.json",
+					"name" : "imgui",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/guilherme/CLionProjects/IMAGE_PROCESSING/cmake-build-debug",
+		"source" : "/home/guilherme/CLionProjects/IMAGE_PROCESSING"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

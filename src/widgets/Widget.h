@@ -23,7 +23,4 @@ class Widget {
     void removeAllChildrenRecursively();
     virtual void render() = 0;
 };
-
-
-
 #endif //WIDGET_H

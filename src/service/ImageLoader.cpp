@@ -11,8 +11,12 @@
 
 GuigoImage* ImageLoader::loadImage(char* path) {
     SDL_Surface* surface = IMG_Load(path);
+
+    Log::getInstance()->log(INFO, "AINNNNN");
+    Log::getInstance()->log(INFO, "UINNNNN");
+    Log::getInstance()->log(INFO, "BUINNNNN");
     if (!surface) {
-        printf("Falha ao carregar a imagem: %s\n", IMG_GetError());
+        Log::getInstance()->log(ERROR ,"Couldn't load image because: " + static_cast<std::string>( IMG_GetError()));
     }
 
     unsigned int texture;

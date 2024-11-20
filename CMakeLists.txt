@@ -1,7 +1,6 @@
 cmake_minimum_required(VERSION 3.20)
 project(IMAGE_PROCESSING LANGUAGES CXX CUDA)
 
-
 find_package(SDL2 REQUIRED)
 find_package(SDL2_image REQUIRED)
 
@@ -33,7 +32,15 @@ add_executable(IMAGE_PROCESSING main.cu
         src/service/ImageLoader.cpp
         src/service/ImageLoader.h
         src/widgets/ImageModifier.cpp
-        src/widgets/ImageModifier.h)
+        src/widgets/ImageModifier.h
+        src/widgets/LogWidget.cpp
+        src/widgets/LogWidget.h
+        src/log/Log.cpp
+        src/log/Log.h
+        src/widgets/Console.cpp
+        src/widgets/Console.h
+        src/observers/LogObserver.h
+)
 
 target_link_libraries(IMAGE_PROCESSING PRIVATE
         ${SDL2_LIBRARIES}
