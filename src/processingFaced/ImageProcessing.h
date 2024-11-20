@@ -6,8 +6,6 @@
 #define IMAGEPROCESSING_H
 #include "../renderer/Renderer.h"
 #include <GL/glew.h>
-#include "../widgets/HelloWidget.h"
-#include "../widgets/TestWidget.h"
 #include "../log/Log.h"
 
 class ImageProcessing {

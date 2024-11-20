@@ -21,25 +21,25 @@ add_executable(IMAGE_PROCESSING main.cu
         src/editor/Editor.h
         src/widgets/Widget.cpp
         src/widgets/Widget.h
-        src/widgets/HelloWidget.cpp
-        src/widgets/HelloWidget.h
-        src/widgets/TestWidget.cpp
-        src/widgets/TestWidget.h
-        src/widgets/ImageViwer.cpp
-        src/widgets/ImageViwer.h
+        src/widgets/imageManipulation/ImageViwer.cpp
+        src/widgets/imageManipulation/ImageViwer.h
         src/components/GuigoImage.cpp
         src/components/GuigoImage.h
         src/service/ImageLoader.cpp
         src/service/ImageLoader.h
-        src/widgets/ImageModifier.cpp
-        src/widgets/ImageModifier.h
-        src/widgets/LogWidget.cpp
-        src/widgets/LogWidget.h
+        src/widgets/imageManipulation/ImageModifier.cpp
+        src/widgets/imageManipulation/ImageModifier.h
+        src/widgets/console/LogWidget.cpp
+        src/widgets/console/LogWidget.h
         src/log/Log.cpp
         src/log/Log.h
-        src/widgets/Console.cpp
-        src/widgets/Console.h
+        src/widgets/console/Console.cpp
+        src/widgets/console/Console.h
         src/observers/LogObserver.h
+        src/widgets/menuBar/MenuBar.cpp
+        src/widgets/menuBar/MenuBar.h
+        src/widgets/menuBar/FileMenuBar.cpp
+        src/widgets/menuBar/FileMenuBar.h
 )
 
 target_link_libraries(IMAGE_PROCESSING PRIVATE

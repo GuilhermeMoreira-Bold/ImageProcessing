@@ -5,6 +5,7 @@ Descrição, tarefas com "-" é para serem feitas, tarefas com # já foram final
 # Terminar o sistema de log, ele deve escrever em um arquivo todos os logs do programa.
 # Criar um sistema que intercepta esses logs e passa para o Widget de log's.
 # Sistema que vai interceptar os logs e enviar para os Widgets interessados.
+- Criar o sistema para criar outros Widget's viewers.
 - Sistema de lista de imagens, posso ter mais de um Widget Viewer.
 - Sistema de adicionar ferramentas ao Widget Viewer da imagem atual.
 - Criar a barra de tarefas

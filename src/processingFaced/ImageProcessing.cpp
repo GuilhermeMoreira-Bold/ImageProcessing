@@ -6,9 +6,11 @@
 
 #include <SDL.h>
 #include "../service/ImageLoader.h"
-#include "../widgets/Console.h"
-#include "../widgets/ImageModifier.h"
-#include "../widgets/ImageViwer.h"
+#include "../widgets/console/Console.h"
+#include "../widgets/imageManipulation/ImageModifier.h"
+#include "../widgets/imageManipulation/ImageViwer.h"
+#include "../widgets/menuBar/FileMenuBar.h"
+#include "../widgets/menuBar/MenuBar.h"
 #include "backends/imgui_impl_sdl2.h"
 
 ImageProcessing::ImageProcessing(char* title, int width, int height) {
@@ -53,7 +55,11 @@ ImageProcessing::ImageProcessing(char* title, int width, int height) {
     GuigoImage* image = loader.loadImage("/home/guilherme/CLionProjects/IMAGE_PROCESSING/res/img.jpg");
 
     editor = new Editor(window, gl_context,
-        new ImageViwer(1200.0f,843.0f,image), new ImageModifier(image), console);
+        new ImageViwer(1200.0f,843.0f,image),
+        new ImageModifier(image),
+        console,
+        new MenuBar(new FileMenuBar())
+        );
 
     myRenderer = new Renderer(window, renderer, editor);
 }

@@ -13,7 +13,6 @@ class Widget {
     std::vector<Widget*> childrens;
     template<typename  ...Args>
     Widget(Args... args) {
-
        (childrens.emplace_back(args), ...);
     };
     virtual ~Widget();
