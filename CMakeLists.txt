@@ -40,6 +40,8 @@ add_executable(IMAGE_PROCESSING main.cu
         src/widgets/menuBar/MenuBar.h
         src/widgets/menuBar/FileMenuBar.cpp
         src/widgets/menuBar/FileMenuBar.h
+        src/widgets/imageManipulation/ImageViewerCreator.cpp
+        src/widgets/imageManipulation/ImageViewerCreator.h
 )
 
 target_link_libraries(IMAGE_PROCESSING PRIVATE

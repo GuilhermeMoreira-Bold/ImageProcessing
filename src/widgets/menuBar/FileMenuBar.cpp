@@ -6,10 +6,11 @@
 
 #include <imgui.h>
 
+
 void FileMenuBar::render() {
     if(ImGui::BeginMenu("File")) {
         if(ImGui::MenuItem("Create new image Viewer")) {
-
+            viewerCreator->pop(true);
         }
         if(ImGui::MenuItem("Exit")) {
 

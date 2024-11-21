@@ -5,15 +5,14 @@
 #ifndef FILEMENUBAR_H
 #define FILEMENUBAR_H
 #include "../Widget.h"
-
+#include "../imageManipulation/ImageViewerCreator.h"
 
 class FileMenuBar : public Widget {
-public:
+    ImageViewerCreator* viewerCreator;
+
+    public:
     void render() override;
-
-    FileMenuBar() = default;
+    template<typename ...Args>
+    FileMenuBar(ImageViewerCreator* viewer_creator,Args... args) : Widget(args ...), viewerCreator(viewer_creator) {}
 };
-
-
-
 #endif //FILEMENUBAR_H

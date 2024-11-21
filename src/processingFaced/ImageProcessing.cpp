@@ -8,6 +8,7 @@
 #include "../service/ImageLoader.h"
 #include "../widgets/console/Console.h"
 #include "../widgets/imageManipulation/ImageModifier.h"
+#include "../widgets/imageManipulation/ImageViewerCreator.h"
 #include "../widgets/imageManipulation/ImageViwer.h"
 #include "../widgets/menuBar/FileMenuBar.h"
 #include "../widgets/menuBar/MenuBar.h"
@@ -16,7 +17,6 @@
 ImageProcessing::ImageProcessing(char* title, int width, int height) {
     Console* console = new Console();
     Log::getInstance()->addObserver(console);
-    Log::getInstance()->log(INFO, "[ProcessingFaced] ImageProcessing");
     if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_TIMER | SDL_INIT_GAMECONTROLLER) != 0) {
         Log::getInstance()->log(ERROR,"SDL couldn't initialize: " + static_cast<std::string> (SDL_GetError()));
     }
@@ -53,13 +53,13 @@ ImageProcessing::ImageProcessing(char* title, int width, int height) {
 
     ImageLoader loader;
     GuigoImage* image = loader.loadImage("/home/guilherme/CLionProjects/IMAGE_PROCESSING/res/img.jpg");
+    ImageViewerCreator* creator = new ImageViewerCreator();
 
     editor = new Editor(window, gl_context,
         new ImageViwer(1200.0f,843.0f,image),
         new ImageModifier(image),
         console,
-        new MenuBar(new FileMenuBar())
-        );
+        new MenuBar(new FileMenuBar(creator)), creator);
 
     myRenderer = new Renderer(window, renderer, editor);
 }

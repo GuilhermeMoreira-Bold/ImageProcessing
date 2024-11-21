@@ -7,10 +7,11 @@
 #include <imgui.h>
 
 void MenuBar::render() {
-    ImGui::BeginMainMenuBar();
-       for(auto& child : this->childrens) {
-           child->render();
-       }
-    ImGui::EndMainMenuBar();
+    if(ImGui::BeginMainMenuBar()) {
+        for(auto& child : this->childrens) {
+            child->render();
+        }
+        ImGui::EndMainMenuBar();
+    }
 
 }

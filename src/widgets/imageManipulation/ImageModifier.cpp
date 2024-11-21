@@ -10,10 +10,14 @@
 #include <GL/glew.h>
 
 void ImageModifier::render() {
+    for(auto& child : this->childrens) {
+        child->render();
+    }
     ImGui::Begin("Modify Image");
     if (ImGui::Button("Apply")) {
         modify();
     }
+
     ImGui::End();
 }
 
