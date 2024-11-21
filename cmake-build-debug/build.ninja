@@ -47,112 +47,119 @@ cmake_ninja_workdir = /home/guilherme/CLionProjects/IMAGE_PROCESSING/cmake-build
 #############################################
 # Order-only phony target for IMAGE_PROCESSING
 
-build cmake_object_order_depends_target_IMAGE_PROCESSING: phony || cmake_object_order_depends_target_imgui
+build cmake_object_order_depends_target_IMAGE_PROCESSING: phony || cmake_object_order_depends_target_imgui cmake_object_order_depends_target_nfd
 
 build CMakeFiles/IMAGE_PROCESSING.dir/main.cu.o: CUDA_COMPILER__IMAGE_PROCESSING_unscanned_Debug /home/guilherme/CLionProjects/IMAGE_PROCESSING/main.cu || cmake_object_order_depends_target_IMAGE_PROCESSING
   DEP_FILE = CMakeFiles/IMAGE_PROCESSING.dir/main.cu.o.d
   FLAGS = -g "--generate-code=arch=compute_52,code=[compute_52,sm_52]"
-  INCLUDES = -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/imgui -isystem /usr/include/SDL2
+  INCLUDES = -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/imgui -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/native_file/src/include -isystem /usr/include/SDL2
   OBJECT_DIR = CMakeFiles/IMAGE_PROCESSING.dir
   OBJECT_FILE_DIR = CMakeFiles/IMAGE_PROCESSING.dir
 
 build CMakeFiles/IMAGE_PROCESSING.dir/src/renderer/Renderer.cpp.o: CXX_COMPILER__IMAGE_PROCESSING_unscanned_Debug /home/guilherme/CLionProjects/IMAGE_PROCESSING/src/renderer/Renderer.cpp || cmake_object_order_depends_target_IMAGE_PROCESSING
   DEP_FILE = CMakeFiles/IMAGE_PROCESSING.dir/src/renderer/Renderer.cpp.o.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/imgui -isystem /usr/include/SDL2
+  INCLUDES = -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/imgui -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/native_file/src/include -isystem /usr/include/SDL2
   OBJECT_DIR = CMakeFiles/IMAGE_PROCESSING.dir
   OBJECT_FILE_DIR = CMakeFiles/IMAGE_PROCESSING.dir/src/renderer
 
 build CMakeFiles/IMAGE_PROCESSING.dir/src/processingFaced/ImageProcessing.cpp.o: CXX_COMPILER__IMAGE_PROCESSING_unscanned_Debug /home/guilherme/CLionProjects/IMAGE_PROCESSING/src/processingFaced/ImageProcessing.cpp || cmake_object_order_depends_target_IMAGE_PROCESSING
   DEP_FILE = CMakeFiles/IMAGE_PROCESSING.dir/src/processingFaced/ImageProcessing.cpp.o.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/imgui -isystem /usr/include/SDL2
+  INCLUDES = -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/imgui -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/native_file/src/include -isystem /usr/include/SDL2
   OBJECT_DIR = CMakeFiles/IMAGE_PROCESSING.dir
   OBJECT_FILE_DIR = CMakeFiles/IMAGE_PROCESSING.dir/src/processingFaced
 
 build CMakeFiles/IMAGE_PROCESSING.dir/src/editor/Editor.cpp.o: CXX_COMPILER__IMAGE_PROCESSING_unscanned_Debug /home/guilherme/CLionProjects/IMAGE_PROCESSING/src/editor/Editor.cpp || cmake_object_order_depends_target_IMAGE_PROCESSING
   DEP_FILE = CMakeFiles/IMAGE_PROCESSING.dir/src/editor/Editor.cpp.o.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/imgui -isystem /usr/include/SDL2
+  INCLUDES = -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/imgui -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/native_file/src/include -isystem /usr/include/SDL2
   OBJECT_DIR = CMakeFiles/IMAGE_PROCESSING.dir
   OBJECT_FILE_DIR = CMakeFiles/IMAGE_PROCESSING.dir/src/editor
 
 build CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/Widget.cpp.o: CXX_COMPILER__IMAGE_PROCESSING_unscanned_Debug /home/guilherme/CLionProjects/IMAGE_PROCESSING/src/widgets/Widget.cpp || cmake_object_order_depends_target_IMAGE_PROCESSING
   DEP_FILE = CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/Widget.cpp.o.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/imgui -isystem /usr/include/SDL2
+  INCLUDES = -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/imgui -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/native_file/src/include -isystem /usr/include/SDL2
   OBJECT_DIR = CMakeFiles/IMAGE_PROCESSING.dir
   OBJECT_FILE_DIR = CMakeFiles/IMAGE_PROCESSING.dir/src/widgets
 
 build CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/imageManipulation/ImageViwer.cpp.o: CXX_COMPILER__IMAGE_PROCESSING_unscanned_Debug /home/guilherme/CLionProjects/IMAGE_PROCESSING/src/widgets/imageManipulation/ImageViwer.cpp || cmake_object_order_depends_target_IMAGE_PROCESSING
   DEP_FILE = CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/imageManipulation/ImageViwer.cpp.o.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/imgui -isystem /usr/include/SDL2
+  INCLUDES = -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/imgui -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/native_file/src/include -isystem /usr/include/SDL2
   OBJECT_DIR = CMakeFiles/IMAGE_PROCESSING.dir
   OBJECT_FILE_DIR = CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/imageManipulation
 
 build CMakeFiles/IMAGE_PROCESSING.dir/src/components/GuigoImage.cpp.o: CXX_COMPILER__IMAGE_PROCESSING_unscanned_Debug /home/guilherme/CLionProjects/IMAGE_PROCESSING/src/components/GuigoImage.cpp || cmake_object_order_depends_target_IMAGE_PROCESSING
   DEP_FILE = CMakeFiles/IMAGE_PROCESSING.dir/src/components/GuigoImage.cpp.o.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/imgui -isystem /usr/include/SDL2
+  INCLUDES = -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/imgui -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/native_file/src/include -isystem /usr/include/SDL2
   OBJECT_DIR = CMakeFiles/IMAGE_PROCESSING.dir
   OBJECT_FILE_DIR = CMakeFiles/IMAGE_PROCESSING.dir/src/components
 
 build CMakeFiles/IMAGE_PROCESSING.dir/src/service/ImageLoader.cpp.o: CXX_COMPILER__IMAGE_PROCESSING_unscanned_Debug /home/guilherme/CLionProjects/IMAGE_PROCESSING/src/service/ImageLoader.cpp || cmake_object_order_depends_target_IMAGE_PROCESSING
   DEP_FILE = CMakeFiles/IMAGE_PROCESSING.dir/src/service/ImageLoader.cpp.o.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/imgui -isystem /usr/include/SDL2
+  INCLUDES = -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/imgui -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/native_file/src/include -isystem /usr/include/SDL2
   OBJECT_DIR = CMakeFiles/IMAGE_PROCESSING.dir
   OBJECT_FILE_DIR = CMakeFiles/IMAGE_PROCESSING.dir/src/service
 
 build CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/imageManipulation/ImageModifier.cpp.o: CXX_COMPILER__IMAGE_PROCESSING_unscanned_Debug /home/guilherme/CLionProjects/IMAGE_PROCESSING/src/widgets/imageManipulation/ImageModifier.cpp || cmake_object_order_depends_target_IMAGE_PROCESSING
   DEP_FILE = CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/imageManipulation/ImageModifier.cpp.o.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/imgui -isystem /usr/include/SDL2
+  INCLUDES = -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/imgui -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/native_file/src/include -isystem /usr/include/SDL2
   OBJECT_DIR = CMakeFiles/IMAGE_PROCESSING.dir
   OBJECT_FILE_DIR = CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/imageManipulation
 
 build CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/console/LogWidget.cpp.o: CXX_COMPILER__IMAGE_PROCESSING_unscanned_Debug /home/guilherme/CLionProjects/IMAGE_PROCESSING/src/widgets/console/LogWidget.cpp || cmake_object_order_depends_target_IMAGE_PROCESSING
   DEP_FILE = CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/console/LogWidget.cpp.o.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/imgui -isystem /usr/include/SDL2
+  INCLUDES = -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/imgui -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/native_file/src/include -isystem /usr/include/SDL2
   OBJECT_DIR = CMakeFiles/IMAGE_PROCESSING.dir
   OBJECT_FILE_DIR = CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/console
 
 build CMakeFiles/IMAGE_PROCESSING.dir/src/log/Log.cpp.o: CXX_COMPILER__IMAGE_PROCESSING_unscanned_Debug /home/guilherme/CLionProjects/IMAGE_PROCESSING/src/log/Log.cpp || cmake_object_order_depends_target_IMAGE_PROCESSING
   DEP_FILE = CMakeFiles/IMAGE_PROCESSING.dir/src/log/Log.cpp.o.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/imgui -isystem /usr/include/SDL2
+  INCLUDES = -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/imgui -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/native_file/src/include -isystem /usr/include/SDL2
   OBJECT_DIR = CMakeFiles/IMAGE_PROCESSING.dir
   OBJECT_FILE_DIR = CMakeFiles/IMAGE_PROCESSING.dir/src/log
 
 build CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/console/Console.cpp.o: CXX_COMPILER__IMAGE_PROCESSING_unscanned_Debug /home/guilherme/CLionProjects/IMAGE_PROCESSING/src/widgets/console/Console.cpp || cmake_object_order_depends_target_IMAGE_PROCESSING
   DEP_FILE = CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/console/Console.cpp.o.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/imgui -isystem /usr/include/SDL2
+  INCLUDES = -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/imgui -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/native_file/src/include -isystem /usr/include/SDL2
   OBJECT_DIR = CMakeFiles/IMAGE_PROCESSING.dir
   OBJECT_FILE_DIR = CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/console
 
 build CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/menuBar/MenuBar.cpp.o: CXX_COMPILER__IMAGE_PROCESSING_unscanned_Debug /home/guilherme/CLionProjects/IMAGE_PROCESSING/src/widgets/menuBar/MenuBar.cpp || cmake_object_order_depends_target_IMAGE_PROCESSING
   DEP_FILE = CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/menuBar/MenuBar.cpp.o.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/imgui -isystem /usr/include/SDL2
+  INCLUDES = -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/imgui -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/native_file/src/include -isystem /usr/include/SDL2
   OBJECT_DIR = CMakeFiles/IMAGE_PROCESSING.dir
   OBJECT_FILE_DIR = CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/menuBar
 
 build CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/menuBar/FileMenuBar.cpp.o: CXX_COMPILER__IMAGE_PROCESSING_unscanned_Debug /home/guilherme/CLionProjects/IMAGE_PROCESSING/src/widgets/menuBar/FileMenuBar.cpp || cmake_object_order_depends_target_IMAGE_PROCESSING
   DEP_FILE = CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/menuBar/FileMenuBar.cpp.o.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/imgui -isystem /usr/include/SDL2
+  INCLUDES = -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/imgui -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/native_file/src/include -isystem /usr/include/SDL2
   OBJECT_DIR = CMakeFiles/IMAGE_PROCESSING.dir
   OBJECT_FILE_DIR = CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/menuBar
 
 build CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/imageManipulation/ImageViewerCreator.cpp.o: CXX_COMPILER__IMAGE_PROCESSING_unscanned_Debug /home/guilherme/CLionProjects/IMAGE_PROCESSING/src/widgets/imageManipulation/ImageViewerCreator.cpp || cmake_object_order_depends_target_IMAGE_PROCESSING
   DEP_FILE = CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/imageManipulation/ImageViewerCreator.cpp.o.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/imgui -isystem /usr/include/SDL2
+  INCLUDES = -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/imgui -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/native_file/src/include -isystem /usr/include/SDL2
   OBJECT_DIR = CMakeFiles/IMAGE_PROCESSING.dir
   OBJECT_FILE_DIR = CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/imageManipulation
+
+build CMakeFiles/IMAGE_PROCESSING.dir/src/service/ImagePathNFD.cpp.o: CXX_COMPILER__IMAGE_PROCESSING_unscanned_Debug /home/guilherme/CLionProjects/IMAGE_PROCESSING/src/service/ImagePathNFD.cpp || cmake_object_order_depends_target_IMAGE_PROCESSING
+  DEP_FILE = CMakeFiles/IMAGE_PROCESSING.dir/src/service/ImagePathNFD.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/imgui -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/native_file/src/include -isystem /usr/include/SDL2
+  OBJECT_DIR = CMakeFiles/IMAGE_PROCESSING.dir
+  OBJECT_FILE_DIR = CMakeFiles/IMAGE_PROCESSING.dir/src/service
 
 
 # =============================================================================
@@ -162,9 +169,9 @@ build CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/imageManipulation/ImageViewerC
 #############################################
 # Link the executable CMakeFiles/IMAGE_PROCESSING.dir/cmake_device_link.o
 
-build CMakeFiles/IMAGE_PROCESSING.dir/cmake_device_link.o: CXX_EXECUTABLE_DEVICE_LINKER__IMAGE_PROCESSING_Debug CMakeFiles/IMAGE_PROCESSING.dir/main.cu.o CMakeFiles/IMAGE_PROCESSING.dir/src/renderer/Renderer.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/processingFaced/ImageProcessing.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/editor/Editor.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/Widget.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/imageManipulation/ImageViwer.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/components/GuigoImage.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/service/ImageLoader.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/imageManipulation/ImageModifier.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/console/LogWidget.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/log/Log.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/console/Console.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/menuBar/MenuBar.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/menuBar/FileMenuBar.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/imageManipulation/ImageViewerCreator.cpp.o | /usr/lib/x86_64-linux-gnu/libSDL2.so vendor/imgui/libimgui.a /usr/lib/x86_64-linux-gnu/libGLEW.so || vendor/imgui/libimgui.a
+build CMakeFiles/IMAGE_PROCESSING.dir/cmake_device_link.o: CXX_EXECUTABLE_DEVICE_LINKER__IMAGE_PROCESSING_Debug CMakeFiles/IMAGE_PROCESSING.dir/main.cu.o CMakeFiles/IMAGE_PROCESSING.dir/src/renderer/Renderer.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/processingFaced/ImageProcessing.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/editor/Editor.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/Widget.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/imageManipulation/ImageViwer.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/components/GuigoImage.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/service/ImageLoader.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/imageManipulation/ImageModifier.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/console/LogWidget.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/log/Log.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/console/Console.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/menuBar/MenuBar.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/menuBar/FileMenuBar.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/imageManipulation/ImageViewerCreator.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/service/ImagePathNFD.cpp.o | /usr/lib/x86_64-linux-gnu/libSDL2.so vendor/imgui/libimgui.a /usr/lib/x86_64-linux-gnu/libGLEW.so vendor/native_file/libnfd.a || vendor/imgui/libimgui.a vendor/native_file/libnfd.a
   LANGUAGE_COMPILE_FLAGS = -g "--generate-code=arch=compute_52,code=[compute_52,sm_52]"
-  LINK_LIBRARIES = -lSDL2_image vendor/imgui/libimgui.a -lOpenGL  -lcudadevrt -lcudart_static -lrt -lpthread -ldl
+  LINK_LIBRARIES = -lSDL2_image vendor/imgui/libimgui.a -lOpenGL  vendor/native_file/libnfd.a -lgtk-3 -lgdk-3 -lz -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0 -lcudadevrt -lcudart_static -lrt -lpthread -ldl
   LINK_PATH = -L/usr/lib/x86_64-linux-gnu/stubs  -L/usr/lib/gcc/x86_64-linux-gnu/11
   OBJECT_DIR = CMakeFiles/IMAGE_PROCESSING.dir
   TARGET_FILE = CMakeFiles/IMAGE_PROCESSING.dir/cmake_device_link.o
@@ -176,9 +183,9 @@ build CMakeFiles/IMAGE_PROCESSING.dir/cmake_device_link.o: CXX_EXECUTABLE_DEVICE
 #############################################
 # Link the executable IMAGE_PROCESSING
 
-build IMAGE_PROCESSING: CXX_EXECUTABLE_LINKER__IMAGE_PROCESSING_Debug CMakeFiles/IMAGE_PROCESSING.dir/main.cu.o CMakeFiles/IMAGE_PROCESSING.dir/src/renderer/Renderer.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/processingFaced/ImageProcessing.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/editor/Editor.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/Widget.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/imageManipulation/ImageViwer.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/components/GuigoImage.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/service/ImageLoader.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/imageManipulation/ImageModifier.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/console/LogWidget.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/log/Log.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/console/Console.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/menuBar/MenuBar.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/menuBar/FileMenuBar.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/imageManipulation/ImageViewerCreator.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/cmake_device_link.o | /usr/lib/x86_64-linux-gnu/libSDL2.so vendor/imgui/libimgui.a /usr/lib/x86_64-linux-gnu/libGLEW.so || vendor/imgui/libimgui.a
+build IMAGE_PROCESSING: CXX_EXECUTABLE_LINKER__IMAGE_PROCESSING_Debug CMakeFiles/IMAGE_PROCESSING.dir/main.cu.o CMakeFiles/IMAGE_PROCESSING.dir/src/renderer/Renderer.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/processingFaced/ImageProcessing.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/editor/Editor.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/Widget.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/imageManipulation/ImageViwer.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/components/GuigoImage.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/service/ImageLoader.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/imageManipulation/ImageModifier.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/console/LogWidget.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/log/Log.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/console/Console.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/menuBar/MenuBar.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/menuBar/FileMenuBar.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/widgets/imageManipulation/ImageViewerCreator.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/src/service/ImagePathNFD.cpp.o CMakeFiles/IMAGE_PROCESSING.dir/cmake_device_link.o | /usr/lib/x86_64-linux-gnu/libSDL2.so vendor/imgui/libimgui.a /usr/lib/x86_64-linux-gnu/libGLEW.so vendor/native_file/libnfd.a || vendor/imgui/libimgui.a vendor/native_file/libnfd.a
   FLAGS = -g
-  LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libSDL2.so  -lSDL2_image  vendor/imgui/libimgui.a  -lOpenGL  /usr/lib/x86_64-linux-gnu/libGLEW.so  -lcudadevrt  -lcudart_static  -lrt  -lpthread  -ldl
+  LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libSDL2.so  -lSDL2_image  vendor/imgui/libimgui.a  -lOpenGL  /usr/lib/x86_64-linux-gnu/libGLEW.so  vendor/native_file/libnfd.a  -lgtk-3  -lgdk-3  -lz  -lpangocairo-1.0  -lpango-1.0  -lharfbuzz  -latk-1.0  -lcairo-gobject  -lcairo  -lgdk_pixbuf-2.0  -lgio-2.0  -lgobject-2.0  -lglib-2.0  -lcudadevrt  -lcudart_static  -lrt  -lpthread  -ldl
   LINK_PATH = -L/usr/lib/x86_64-linux-gnu/stubs   -L/usr/lib/gcc/x86_64-linux-gnu/11
   OBJECT_DIR = CMakeFiles/IMAGE_PROCESSING.dir
   POST_BUILD = :
@@ -208,6 +215,73 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
   restat = 1
 
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/guilherme/CLionProjects/IMAGE_PROCESSING/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target nfd
+
+
+#############################################
+# Order-only phony target for nfd
+
+build cmake_object_order_depends_target_nfd: phony || .
+
+build vendor/native_file/CMakeFiles/nfd.dir/src/nfd_common.c.o: C_COMPILER__nfd_unscanned_Debug /home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/native_file/src/nfd_common.c || cmake_object_order_depends_target_nfd
+  DEP_FILE = vendor/native_file/CMakeFiles/nfd.dir/src/nfd_common.c.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -I/usr/include/SDL2 -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/native_file/src/include -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include
+  OBJECT_DIR = vendor/native_file/CMakeFiles/nfd.dir
+  OBJECT_FILE_DIR = vendor/native_file/CMakeFiles/nfd.dir/src
+
+build vendor/native_file/CMakeFiles/nfd.dir/src/nfd_gtk.c.o: C_COMPILER__nfd_unscanned_Debug /home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/native_file/src/nfd_gtk.c || cmake_object_order_depends_target_nfd
+  DEP_FILE = vendor/native_file/CMakeFiles/nfd.dir/src/nfd_gtk.c.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -I/usr/include/SDL2 -I/home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/native_file/src/include -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include
+  OBJECT_DIR = vendor/native_file/CMakeFiles/nfd.dir
+  OBJECT_FILE_DIR = vendor/native_file/CMakeFiles/nfd.dir/src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target nfd
+
+
+#############################################
+# Link the static library vendor/native_file/libnfd.a
+
+build vendor/native_file/libnfd.a: C_STATIC_LIBRARY_LINKER__nfd_Debug vendor/native_file/CMakeFiles/nfd.dir/src/nfd_common.c.o vendor/native_file/CMakeFiles/nfd.dir/src/nfd_gtk.c.o
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = vendor/native_file/CMakeFiles/nfd.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = vendor/native_file/libnfd.a
+  TARGET_PDB = nfd.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build vendor/native_file/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/guilherme/CLionProjects/IMAGE_PROCESSING/cmake-build-debug/vendor/native_file && /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build vendor/native_file/edit_cache: phony vendor/native_file/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build vendor/native_file/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/guilherme/CLionProjects/IMAGE_PROCESSING/cmake-build-debug/vendor/native_file && /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S/home/guilherme/CLionProjects/IMAGE_PROCESSING -B/home/guilherme/CLionProjects/IMAGE_PROCESSING/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build vendor/native_file/rebuild_cache: phony vendor/native_file/CMakeFiles/rebuild_cache.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -325,6 +399,10 @@ build imgui: phony vendor/imgui/libimgui.a
 
 build libimgui.a: phony vendor/imgui/libimgui.a
 
+build libnfd.a: phony vendor/native_file/libnfd.a
+
+build nfd: phony vendor/native_file/libnfd.a
+
 # =============================================================================
 # Folder targets.
 
@@ -333,7 +411,7 @@ build libimgui.a: phony vendor/imgui/libimgui.a
 #############################################
 # Folder: /home/guilherme/CLionProjects/IMAGE_PROCESSING/cmake-build-debug
 
-build all: phony IMAGE_PROCESSING vendor/imgui/all
+build all: phony IMAGE_PROCESSING vendor/native_file/all vendor/imgui/all
 
 # =============================================================================
 
@@ -343,20 +421,27 @@ build all: phony IMAGE_PROCESSING vendor/imgui/all
 build vendor/imgui/all: phony vendor/imgui/libimgui.a
 
 # =============================================================================
+
+#############################################
+# Folder: /home/guilherme/CLionProjects/IMAGE_PROCESSING/cmake-build-debug/vendor/native_file
+
+build vendor/native_file/all: phony vendor/native_file/libnfd.a
+
+# =============================================================================
 # Built-in targets
 
 
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCUDAInformation.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/NVIDIA-CUDA.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/NVIDIA.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/FeatureSummary.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindGLEW.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindPackageMessage.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU-C.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU-CXX.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-Initialize.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-NVIDIA-CUDA.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/UnixPaths.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/SelectLibraryConfigurations.cmake /home/guilherme/CLionProjects/IMAGE_PROCESSING/CMakeLists.txt /home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/imgui/CMakeLists.txt /usr/lib/x86_64-linux-gnu/cmake/SDL2/sdl2-config-version.cmake /usr/lib/x86_64-linux-gnu/cmake/SDL2/sdl2-config.cmake /usr/lib/x86_64-linux-gnu/cmake/SDL2_image/sdl2_image-config-version.cmake /usr/lib/x86_64-linux-gnu/cmake/SDL2_image/sdl2_image-config.cmake CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCUDACompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCUDAInformation.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/NVIDIA-CUDA.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/NVIDIA.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/FeatureSummary.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindGLEW.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindPackageMessage.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindPkgConfig.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU-C.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU-CXX.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-Initialize.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-NVIDIA-CUDA.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/UnixPaths.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/SelectLibraryConfigurations.cmake /home/guilherme/CLionProjects/IMAGE_PROCESSING/CMakeLists.txt /home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/imgui/CMakeLists.txt /home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/native_file/CMakeLists.txt /usr/lib/x86_64-linux-gnu/cmake/SDL2/sdl2-config-version.cmake /usr/lib/x86_64-linux-gnu/cmake/SDL2/sdl2-config.cmake /usr/lib/x86_64-linux-gnu/cmake/SDL2_image/sdl2_image-config-version.cmake /usr/lib/x86_64-linux-gnu/cmake/SDL2_image/sdl2_image-config.cmake CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCUDACompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCUDAInformation.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/NVIDIA-CUDA.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/NVIDIA.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/FeatureSummary.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindGLEW.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindPackageMessage.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU-C.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU-CXX.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-Initialize.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-NVIDIA-CUDA.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/UnixPaths.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/SelectLibraryConfigurations.cmake /home/guilherme/CLionProjects/IMAGE_PROCESSING/CMakeLists.txt /home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/imgui/CMakeLists.txt /usr/lib/x86_64-linux-gnu/cmake/SDL2/sdl2-config-version.cmake /usr/lib/x86_64-linux-gnu/cmake/SDL2/sdl2-config.cmake /usr/lib/x86_64-linux-gnu/cmake/SDL2_image/sdl2_image-config-version.cmake /usr/lib/x86_64-linux-gnu/cmake/SDL2_image/sdl2_image-config.cmake CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCUDACompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake: phony
+build /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCUDAInformation.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/NVIDIA-CUDA.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/NVIDIA.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/FeatureSummary.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindGLEW.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindPackageMessage.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindPkgConfig.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU-C.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU-CXX.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-Initialize.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-NVIDIA-CUDA.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/UnixPaths.cmake /home/guilherme/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/SelectLibraryConfigurations.cmake /home/guilherme/CLionProjects/IMAGE_PROCESSING/CMakeLists.txt /home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/imgui/CMakeLists.txt /home/guilherme/CLionProjects/IMAGE_PROCESSING/vendor/native_file/CMakeLists.txt /usr/lib/x86_64-linux-gnu/cmake/SDL2/sdl2-config-version.cmake /usr/lib/x86_64-linux-gnu/cmake/SDL2/sdl2-config.cmake /usr/lib/x86_64-linux-gnu/cmake/SDL2_image/sdl2_image-config-version.cmake /usr/lib/x86_64-linux-gnu/cmake/SDL2_image/sdl2_image-config.cmake CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCUDACompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake: phony
 
 
 #############################################

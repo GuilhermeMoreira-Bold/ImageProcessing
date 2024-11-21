@@ -8,6 +8,7 @@ find_package(GLEW REQUIRED)
 
 include_directories(${SDL2_INCLUDE_DIRS} ${SDL2_IMAGE_INCLUDE_DIRS}  ${GLEW_INCLUDE_DIRS})
 
+add_subdirectory(vendor/native_file)
 add_subdirectory(vendor/imgui)
 
 set(CMAKE_CUDA_STANDARD 20)
@@ -42,6 +43,9 @@ add_executable(IMAGE_PROCESSING main.cu
         src/widgets/menuBar/FileMenuBar.h
         src/widgets/imageManipulation/ImageViewerCreator.cpp
         src/widgets/imageManipulation/ImageViewerCreator.h
+        src/adpaters/ImagePathAdapter.h
+        src/service/ImagePathNFD.cpp
+        src/service/ImagePathNFD.h
 )
 
 target_link_libraries(IMAGE_PROCESSING PRIVATE
@@ -50,6 +54,7 @@ target_link_libraries(IMAGE_PROCESSING PRIVATE
         imgui
         OpenGL
         GLEW::GLEW
+        nfd
 )
 
 set_target_properties(IMAGE_PROCESSING PROPERTIES

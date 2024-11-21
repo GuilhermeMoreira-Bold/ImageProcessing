@@ -6,6 +6,7 @@
 
 #include <SDL.h>
 #include "../service/ImageLoader.h"
+#include "../service/ImagePathNFD.h"
 #include "../widgets/console/Console.h"
 #include "../widgets/imageManipulation/ImageModifier.h"
 #include "../widgets/imageManipulation/ImageViewerCreator.h"
@@ -53,7 +54,7 @@ ImageProcessing::ImageProcessing(char* title, int width, int height) {
 
     ImageLoader loader;
     GuigoImage* image = loader.loadImage("/home/guilherme/CLionProjects/IMAGE_PROCESSING/res/img.jpg");
-    ImageViewerCreator* creator = new ImageViewerCreator();
+    ImageViewerCreator* creator = new ImageViewerCreator(new ImagePathNFD());
 
     editor = new Editor(window, gl_context,
         new ImageViwer(1200.0f,843.0f,image),

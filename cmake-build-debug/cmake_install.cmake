@@ -44,6 +44,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("/home/guilherme/CLionProjects/IMAGE_PROCESSING/cmake-build-debug/vendor/native_file/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("/home/guilherme/CLionProjects/IMAGE_PROCESSING/cmake-build-debug/vendor/imgui/cmake_install.cmake")
 endif()
 
